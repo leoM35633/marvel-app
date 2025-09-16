@@ -2,7 +2,7 @@
   "name": "marvel-app",
   "version": "0.1.0",
 
-  "scripts": {"start": "browser-sync start --server './src' --files './src/**/*''"
+  "scripts": {"start": "browser-sync start --server \"./src\" --files './src/**/*''"
               },
 
   "description": "",
