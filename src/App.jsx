@@ -1,17 +1,13 @@
 import './App.css';
 import characters from './data/characters.json';
+import CharactersList from './components/CharactersList'; // Import du composant
+
 
 function App() {
   return (
     <>
-      <h1>Hello World from React with JSX</h1>
-      <ul>
-        {characters.map((character) => (
-          <li key={character.id} id={`idPers${character.id}`}>
-            {character.name}
-          </li>
-        ))}
-      </ul>
+      <h1>Marvel Characters</h1>
+      <CharactersList characters={characters} />
     </>
   );
 }
