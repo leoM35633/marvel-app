@@ -1,4 +1,4 @@
-function CharactersList({ characters }) {
+function CharactersList({ characters = [] }) {
   return (
     <ul>
       {characters.map((character) => (

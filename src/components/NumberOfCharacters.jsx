@@ -1,4 +1,4 @@
-function NumberOfCharacters({ characters }) {
+function NumberOfCharacters({ characters = [] }) {
   return (
     <p>
       {characters.length > 0
