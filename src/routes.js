@@ -3,6 +3,9 @@ import CharactersPage from './pages/CharactersPage';
 import ContactPage from './pages/ContactPage';
 import Layout from './Layout';
 import NotFoundPage from './pages/NotFoundPage';
+
+import { getCharacters } from './api/characters-api';
+
 // routes of the application
 const routes = [
 {
@@ -12,6 +15,10 @@ const routes = [
         {
         // main page
         index: true,
+        loader: async () => {
+            // return data from here
+            return { characters: await getCharacters() };
+        },
         Component: CharactersPage
         },
         {
