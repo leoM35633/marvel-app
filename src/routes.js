@@ -3,8 +3,9 @@ import CharactersPage from './pages/CharactersPage';
 import ContactPage from './pages/ContactPage';
 import Layout from './Layout';
 import NotFoundPage from './pages/NotFoundPage';
+import CharacterDetailPage from './pages/CharacterDetailPage'; // ajout du composant détail
 
-import { getCharacters } from './api/characters-api';
+import { getCharacters, getCharacterById } from './api/characters-api';
 
 // routes of the application
 const routes = [
@@ -20,6 +21,14 @@ const routes = [
             return { characters: await getCharacters() };
         },
         Component: CharactersPage
+        },
+        {
+        // détail personnage
+        path: "/character/:id",
+        loader: async ({ params }) => {
+            return { character: await getCharacterById(params.id) };
+        },
+        Component: CharacterDetailPage
         },
         {
         // about page
