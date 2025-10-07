@@ -10,8 +10,13 @@ FNDA:1,getCharacterById
 FNDA:1,(anonymous_2)
 DA:6,1
 DA:12,1
-LF:2
-LH:2
-BRF:0
-BRH:0
+DA:13,1
+DA:14,0
+DA:16,1
+LF:5
+LH:4
+BRDA:13,0,0,0
+BRDA:13,0,1,1
+BRF:2
+BRH:1
 end_of_record
