@@ -1,0 +1,17 @@
+TN:
+SF:src\api\characters-api.js
+FN:4,getCharacters
+FN:10,getCharacterById
+FN:12,(anonymous_2)
+FNF:3
+FNH:3
+FNDA:1,getCharacters
+FNDA:1,getCharacterById
+FNDA:1,(anonymous_2)
+DA:6,1
+DA:12,1
+LF:2
+LH:2
+BRF:0
+BRH:0
+end_of_record
