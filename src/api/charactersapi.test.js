@@ -27,6 +27,11 @@ describe('characters-api', () => {
             const result = getCharacterById(1);
             expect(result).toEqual({ id: 1, name: 'Character One' });
         });
+
+        // Test to check if the function throws an error for an invalid ID
+        test('should throw an error when an invalid ID is provided', () => {
+            expect(() => getCharacterById(999)).toThrow('Character with id 999 not found');
+        });
     });
 });
 
