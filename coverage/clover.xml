@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1759853544781" clover="3.2.0">
+  <project timestamp="1759853544781" name="All files">
+    <metrics statements="5" coveredstatements="5" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1" elements="11" coveredelements="11" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
+    <file name="NumberOfCharacters.jsx" path="C:\DEV\marvel-app\src\components\NumberOfCharacters.jsx">
+      <metrics statements="5" coveredstatements="5" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
+      <line num="8" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="9" count="2" type="stmt"/>
+      <line num="13" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
