@@ -56,6 +56,6 @@ describe('CharacterDetailPage', () => {
     // vérifie le h2 de la page est présent
     expect(screen.getByRole('heading', { level: 2, name: 'Détail du personnage' })).toBeInTheDocument()
     // vérifie le titre de la page
-    expect(document.title).toBe('Détail du personnage - Marvel App')
+    expect(document.title).toBe('Détail du personnage')
   })
 })
