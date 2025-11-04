@@ -25,8 +25,10 @@ describe('CharacterDetailPage', () => {
 
     render(<Stub initialEntries={['/character/100']} />)
 
-    // page heading
+    // page heading (h2)
     expect(await screen.findByRole('heading', { level: 2, name: 'Détail du personnage' })).toBeInTheDocument()
+    // vérifie le titre de la page
+    expect(document.title).toBe('Détail du personnage - Marvel App')
     // character name from CharacterDetail (h3)
     expect(screen.getByRole('heading', { level: 3, name: 'Test Hero' })).toBeInTheDocument()
     // description
@@ -51,5 +53,9 @@ describe('CharacterDetailPage', () => {
     render(<Stub initialEntries={['/character/101']} />)
 
     expect(await screen.findByText('Aucune description.')).toBeInTheDocument()
+    // vérifie le h2 de la page est présent
+    expect(screen.getByRole('heading', { level: 2, name: 'Détail du personnage' })).toBeInTheDocument()
+    // vérifie le titre de la page
+    expect(document.title).toBe('Détail du personnage - Marvel App')
   })
 })
