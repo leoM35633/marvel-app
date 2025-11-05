@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="C:\DEV\marvel-tmp\src\components\CharacterDetail.test.jsx">
+    <testCase name="CharacterDetail component renders character details with image and description" duration="82"/>
+    <testCase name="CharacterDetail component renders fallback description and no image when none provided" duration="6"/>
+    <testCase name="CharacterDetail component renders &quot;No character&quot; when no character prop is provided" duration="7"/>
+  </file>
+  <file path="C:\DEV\marvel-tmp\src\pages\CharacterDetailPage.test.jsx">
+    <testCase name="CharacterDetailPage renders detail page with character provided by loader" duration="126">
+      <failure message="Error: expect(received).toBe(expected) // Object.is equality"><![CDATA[Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: "Détail du personnage - Marvel App"
+Received: ""
+    at toBe (C:\DEV\marvel-tmp\src\pages\CharacterDetailPage.test.jsx:31:28)
+    at Generator.call (C:\DEV\marvel-tmp\src\pages\CharacterDetailPage.test.jsx:2:1)
+    at Generator._invoke [as next] (C:\DEV\marvel-tmp\src\pages\CharacterDetailPage.test.jsx:2:1)
+    at asyncGeneratorStep (C:\DEV\marvel-tmp\src\pages\CharacterDetailPage.test.jsx:2:1)
+    at asyncGeneratorStep (C:\DEV\marvel-tmp\src\pages\CharacterDetailPage.test.jsx:2:1)]]></failure>
+    </testCase>
+    <testCase name="CharacterDetailPage renders fallback description when none provided" duration="32">
+      <failure message="Error: expect(received).toBe(expected) // Object.is equality"><![CDATA[Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: "Détail du personnage"
+Received: ""
+    at toBe (C:\DEV\marvel-tmp\src\pages\CharacterDetailPage.test.jsx:59:28)
+    at Generator.call (C:\DEV\marvel-tmp\src\pages\CharacterDetailPage.test.jsx:2:1)
+    at Generator._invoke [as next] (C:\DEV\marvel-tmp\src\pages\CharacterDetailPage.test.jsx:2:1)
+    at asyncGeneratorStep (C:\DEV\marvel-tmp\src\pages\CharacterDetailPage.test.jsx:2:1)
+    at asyncGeneratorStep (C:\DEV\marvel-tmp\src\pages\CharacterDetailPage.test.jsx:2:1)]]></failure>
+    </testCase>
+  </file>
+</testExecutions>

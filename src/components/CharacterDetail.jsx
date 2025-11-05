@@ -1,6 +1,10 @@
 import React from "react";
 
 export default function CharacterDetail({ character }) {
+    if (!character) {
+        return <div>No character</div>;
+    }
+
     const { name, description, modified, thumbnail } = character;
     const imageUrl =
         thumbnail && thumbnail.path && thumbnail.extension
