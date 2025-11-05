@@ -1,3 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
+  <file path="C:\DEV\marvel-tmp\src\api\charactersapi.test.js">
+    <testCase name="characters-api getCharacters should return the list of characters" duration="19"/>
+    <testCase name="characters-api getCharacterById should return the correct character when a valid ID is provided" duration="1"/>
+    <testCase name="characters-api getCharacterById should throw an error when an invalid ID is provided" duration="6"/>
+  </file>
+  <file path="C:\DEV\marvel-tmp\src\pages\CharactersPage.test.jsx">
+    <testCase name="render CharactersPage component" duration="147"/>
+  </file>
 </testExecutions>
