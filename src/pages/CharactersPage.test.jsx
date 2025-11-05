@@ -36,6 +36,9 @@ test('render CharactersPage component', async () => {
     const heading = await screen.findByRole('heading', { level: 2, name: 'Marvel Characters' })
     expect(heading).toBeInTheDocument()
 
+    // also ensure we can synchronously get the same h2 via getByRole
+    expect(screen.getByRole('heading', { level: 2, name: 'Marvel Characters' })).toBeInTheDocument()
+
     // expect the document title to be "Characters | Marvel App"
     expect(document.title).toBe('Characters | Marvel App')
 
