@@ -16,9 +16,12 @@ const routes = [
         {
         // main page
         index: true,
-        loader: async () => {
-            // return data from here
-            return { characters: await getCharacters() };
+        loader: async ({ request }) => {
+            // read query params from URL
+            const url = new URL(request.url);
+            const sort = url.searchParams.get('sort') || 'name';
+            const order = url.searchParams.get('order') || 'asc';
+            return { characters: await getCharacters(sort, order), sort, order };
         },
         Component: CharactersPage
         },
